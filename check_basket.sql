@@ -13,6 +13,6 @@ ADD CONSTRAINT ck_taille_min_nom_equipe
 CHECK(CHAR_LENGTH(nom_equipe) > 4);
 -- la valeur du code_postal dans la table adresse doit toujours avoir 5 chiffres.
 ALTER TABLE adresse
-ADD CONSTRAINT ck_taille_min_nom_equipe
+ADD CONSTRAINT ck_taille_code_postal
 CHECK(CHAR_LENGTH(code_postal) = 5);
 
